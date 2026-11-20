@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "fixupx copy link",
+    "version": "1.0.0",
+    "description": "Copy (x)twitter links without tracking and with fixupx",
+    "content_scripts": [
+        {
+            "matches": ["https://x.com/*", "https://twitter.com/*"],
+            "js": ["inject.js"],
+            "run_at": "document_start",
+            "world": "MAIN"
+        }
+    ]
+}
